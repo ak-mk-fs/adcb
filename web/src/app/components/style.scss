@@ -1,0 +1,19 @@
+.main-page-wrapper{
+    margin: 2em;
+.list-item-wrapper{
+    border-bottom: 1px solid #dbd5d5;
+    margin: 10px;
+    .list-item-content{
+        width: calc(100% - 100px);
+        margin-left: 12px;
+        .list-item-title{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .list-content-description{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+}
+}
