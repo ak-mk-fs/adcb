@@ -30,5 +30,5 @@ npm i
 npm run start -c
 ```
 
-# Scan the QR code with the Expo Go app on your mobile device (iOS or Android).
-# Or press a to open on an Android emulator or i for an iOS simulator.
+    Scan the QR code with the Expo Go app on your mobile device (iOS or Android).
+    Or press a to open on an Android emulator or i for an iOS simulator.
