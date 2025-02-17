@@ -8,7 +8,13 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ['cdn.dummyjson.com'], // Add the domain of the external image source
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.dummyjson.com',
+        pathname: '/**',
+      },
+    ]
   },
 };
 

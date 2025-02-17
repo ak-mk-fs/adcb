@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useCallback } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 import useApi from "common/hooks/useApi";
 import "./style.scss";
 
@@ -37,21 +37,27 @@ const List = () => {
   }, []);
   return (
     <>
-        {list.map((item, index) => {
-          return (
-            <div
-              key={item.id}
-              ref={index === list.length - 1 ? lastPostRef : null}
-              className="flex items-center list-item-wrapper"
-            >
-             <Image width={60} height={60} src={item.thumbnail} alt="img"/> <div className="list-item-content">
+      {list.map((item, index) => {
+        return (
+          <div
+            key={item.id}
+            ref={index === list.length - 1 ? lastPostRef : null}
+            className="flex items-center list-item-wrapper"
+          >
+            <Image
+              width={60}
+              height={60}
+              src={item.thumbnail}
+              alt="img"
+              className="list-image"
+            />{" "}
+            <div className="list-item-content">
               <div className="list-item-title">{item.title}</div>
               <div className="list-content-description">{item.description}</div>
-              </div>
             </div>
-          );
-        })}
-       
+          </div>
+        );
+      })}
     </>
   );
 };
